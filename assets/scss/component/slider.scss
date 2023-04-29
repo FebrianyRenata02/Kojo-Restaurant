@@ -1,0 +1,96 @@
+.slider{
+    position: relative;
+    padding:0;
+    .shape{
+        position: absolute;
+        background:url(../images/shapes/shape.png);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:right;
+        width:50%;
+        height:100%;
+        top:0;
+        right:0;
+    }
+
+    .shape-01{
+        position: absolute;
+        left:-100px;
+        bottom:0;
+        width:308px;
+        height:180px;
+        background:url(../images/shapes/01.png);
+        background-repeat:no-repeat;
+        transform:rotate(-29deg);
+    }
+
+    .banner{
+        position: relative;
+        padding:6.25rem 0;
+
+        .carousel{
+            .carousel-control-prev,.carousel-control-next{
+                display:none;
+            }
+        }
+
+        .wrapper{
+            display:inline-block;
+            margin:1.25rem 0;
+            transition:all ease .5s;
+            width:100%;
+            padding:2.5rem 0;
+
+            .content{
+                position: relative;
+                display:block;
+
+                h1{
+                    font-size:3.25rem;
+                    color:$heading-color;
+                    text-transform:uppercase;
+                    letter-spacing:1px;
+                    margin:.625rem 0;
+                    display:inline-block;
+                    width:100%;
+                    font-weight:600;
+                    line-height:4.25rem;
+                }
+
+                h5{
+                    font-size: 1.25rem;
+                    font-weight:400;
+                    text-transform:capitalize;
+                    color:$text-primary;
+                    display:block;
+                    margin:.625rem 0;
+                    line-height:1.875rem;
+                }
+
+                ol{
+                    li{
+                        position: relative;
+                        display:inline-block;
+                        width: fit-content;
+                        padding:.625rem 1.125rem;
+                        background:$icons-color;
+                        border-radius:1.875rem;
+                        color:$color-primary;
+                        font-size:1.125rem;
+                        text-align: center;
+                        vertical-align:middle;
+                        transition:all ease .5s;
+                        margin:1.25rem 0;
+                        a{
+                            color:$color-primary;
+
+                            span{
+                                margin:0 0 0 .625rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

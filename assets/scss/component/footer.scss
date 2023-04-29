@@ -1,0 +1,331 @@
+footer {
+    position: relative;
+    padding: 50px 0px 0px;
+    background: #fafafa;
+
+    @media screen and(max-width:767.98px) {
+        padding: 20px 0 0;
+    }
+
+    .copy-right {
+        padding: 20px 0px;
+        border-top: solid 1px #dfdfdf;
+        font-size: 14px;
+        color: #84878a;
+        text-align: center;
+        // @include shado-1();
+
+        p{
+            a{
+                color:$icons-color;
+                padding-left:10px;
+                font-weight:bold;
+            }
+        }
+    }
+
+    .footer-content {
+        margin: 20px 0px;
+        display: block;
+        width: 100%;
+        color: $text-primary;
+
+        p {
+            font-size: 16px;
+            padding: 10px 0px;
+            line-height: 27px;
+            margin: 0px;
+            color:$text-primary;
+        }
+
+        ul {
+            li {
+                display: inline-block;
+                height: 2.5rem;
+                width: 2.5rem;
+                background: $icons-color;
+                color: $color-primary;
+                line-height: 2.5rem;
+                text-align: center;
+                border-radius:50%;
+                margin: 5px 3px 0px 0px;
+
+            }
+        }
+
+        ol {
+            li {
+                padding: 10px 0px;
+                position: relative;
+
+                a {
+                    color:$text-primary;
+                    font-size: 16px;
+
+                    i {
+                        padding-right: 10px;
+                        color:$icons-color;
+
+                        &::before{
+                            font-size:.9375rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            position: relative;
+            padding: 5px 0px;
+            font-weight: 600;
+            color:$heading-color;
+        }
+
+        .form-group {
+            position: relative;
+
+            .form-control {
+                height: 40px;
+                padding-right: 40px;
+                text-overflow: ellipsis;
+            }
+
+            i {
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                color: $color-primary;
+                background: $icons-color;
+                text-align: center;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+ .bg-0-b {
+     padding: 50px 0px;
+     position: relative;
+     background: #e8f0f5;
+     z-index: 2;
+
+     .main-card-contact {
+         flex-wrap: wrap;
+         width: 100%;
+         margin: 20px 0px;
+         padding: 10px 15px;
+         position: relative;
+         z-index: 9;
+
+         .sup-card-contact {
+             width: 40%;
+             max-width: 40%;
+             flex: 1 1 40%;
+
+             @media screen and(max-width:767.98px) {
+                 width: 100%;
+                 max-width: 100%;
+                 flex: 1 1 100%;
+             }
+
+             .contact-title {
+                 position: relative;
+
+                 h2 {
+                     font-size: 20px;
+                     margin: 0 0 10px 0;
+                     color: #222;
+                     padding-bottom: 5px;
+                     position: relative;
+                     display: inline-block;
+
+                     &::before {
+                         position: absolute;
+                         content: "";
+                         background: $icons-color;
+                         width: 100%;
+                         height: 3px;
+                         bottom: 0;
+                     }
+                 }
+
+                 ol {
+                     li {
+                         display: block;
+                         padding: 10px 0px;
+                         color: #606060;
+                         font-size: 16px;
+                         font-weight: 600;
+
+                         i {
+                             color: $icons-color;
+                             padding-right: 15px;
+
+                         }
+                     }
+                 }
+             }
+
+             .head-content {
+                 position: relative;
+                 display: block;
+
+                 h2 {
+                     font-size: 20px;
+                     margin: 0 0 10px 0;
+                     color: #222;
+                     padding-bottom: 5px;
+                     position: relative;
+                     display: inline-block;
+
+                     &::before {
+                         position: absolute;
+                         content: "";
+                         background: $icons-color;
+                         width: 100%;
+                         height: 3px;
+                         bottom: 0;
+                     }
+                 }
+
+                 p {
+                     font-size: 16px;
+                     line-height: 27px;
+                     display: block;
+                     padding: 20px 0px;
+                     margin: 0px;
+                 }
+             }
+
+         }
+
+         .sup-card-contact-0a {
+             width: 60%;
+             max-width: 60%;
+             flex: 1 1 60%;
+
+             @media screen and(max-width:767.98px) {
+                 width: 100%;
+                 max-width: 100%;
+                 flex: 1 1 100%;
+             }
+
+             .dived {
+                 width: 100%;
+                 flex-wrap: wrap;
+
+                 .ca-ool {
+                     padding: 0px 10px;
+                 }
+
+                 .form-group {
+                     width: 50%;
+                     max-width: 50%;
+                     flex: 1 1 50%;
+
+                     .form-sup {
+                         margin: 10px;
+                         position: relative;
+
+                         .cal-01 {
+                             position: relative;
+                         }
+
+                         i {
+                             position: absolute;
+                             right: 0px;
+                             top: 0px;
+                             height: 45px;
+                             width: 45px;
+                             background: $icons-color;
+                             text-align: center;
+                             line-height: 45px;
+                             color: $color-primary;
+                             border-top-right-radius: .25rem;
+                             border-bottom-right-radius: .25rem;
+                         }
+
+                         label {
+                             font-size: 15px;
+                             color: rgb(110, 110, 110);
+
+                             span {
+                                 position: relative;
+                                 top: 4px;
+                                 left: 5px;
+                                 color: $icons-color;
+                             }
+                         }
+                     }
+
+                     .form-control {
+                         padding: 10px 15px;
+                         margin: 30px 0px;
+                         height: 45px;
+                         position: relative;
+
+                     }
+                 }
+             }
+         }
+     }
+ }
+
+ // -----------------abt-01 CSS----------------
+
+ .abt-01 {
+     padding: 3.125rem 0;
+     background: $icons-color;
+     position: relative;
+     overflow: hidden;
+     z-index: 9;
+
+     &::before {
+         position: absolute;
+         content: "";
+         background: #fff;
+         height: 9.375rem;
+         width: 9.375rem;
+         top: 0%;
+         left: 48%;
+         z-index: 1;
+         opacity: 0.1;
+         transform: translate3d(-23%, 17%, 0) rotate(-54deg);
+     }
+
+     .heading-wrapper {
+         position: relative;
+         margin: 1.25rem 0;
+         display: block;
+         text-align: center;
+         z-index: 8;
+
+         h3 {
+             font-size: 1.25rem;
+             font-weight: 700;
+             color: $color-primary;
+             margin-bottom: 0.625rem;
+             text-transform: uppercase;
+         }
+
+         ol {
+             li {
+                 display: inline-block;
+                 font-size: 1rem;
+                 color: #ddd;
+
+                 &:nth-child(2) {
+                     color: $color-primary;
+                 }
+
+                 i {
+                     margin: 0 0.625rem;
+                     color: #ddd;
+                 }
+             }
+         }
+     }
+ }

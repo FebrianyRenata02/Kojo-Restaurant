@@ -1,0 +1,201 @@
+
+header{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:999;
+    transition: all ease .5s;
+
+    .main-nav {
+        position: relative;;
+        z-index: 999;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        flex: 1 1 100%;
+        padding: 5px 0px;
+
+    .logo {
+        width: 20%;
+        flex: 1 1 20%;
+        max-width: 20%;
+        display: block;
+        padding: 0 15px;
+
+        @media screen and(max-width:768px) {
+            width: 100%;
+            flex: 1 1 100%;
+            max-width: 100%;
+            padding: 10px 15px;
+        }
+    }
+
+    .my-nav {
+        width: 80%;
+        flex: 1 1 80%;
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media screen and(max-width:767.98px) {
+            width: 100%;
+            flex: 1 1 100%;
+            max-width: 100%;
+            justify-content: flex-start;
+            background-color:$color-primary;
+        }
+
+        .menu {
+            position: relative;
+
+            @media screen and(max-width:767.98px) {
+                display: none;
+                left: -100%;
+                transition: all ease-in-out 0.5s;
+            }
+
+            ul {
+                li {
+                    display: inline-block;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    transition: 0.4s;
+                    padding: 10px 15px;
+
+                    &:nth-child(6),&:nth-child(7){
+                        a{
+                            &::before{
+                                display:none;
+                            }
+                        }
+                    }
+
+                    &:nth-child(6){
+                        a{
+                            span{
+                                &::before{
+                                    font-size:1.875rem;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(7){
+                        background-color:$color-primary;
+                        border-radius:1.875rem;
+
+                        @media screen and(max-width:768px){
+                            background-color:$icons-color;
+                            border-radius:1.25rem;
+                        }
+                        
+                    }
+
+                    @media screen and(max-width:767.98px) {
+                        display: block;
+                        padding: 15px 0px;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 991.98px) {
+                        padding: 10px;
+                    }
+
+                    a {
+                        color: $heading-color;
+                        padding: 10px 17px;
+                        font-weight: 600;
+
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            padding: 10px 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sub-main-nav{
+    .my-nav{
+        .menu{
+            ul{
+                li{
+
+                    &:last-child{
+                        a{
+                            color:$heading-color;
+                        }
+                    }
+                    a{
+                        color:$icons-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu-toggle {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    margin: 0px 0 0 40px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: $icons-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+    &::before {
+        position: absolute;
+        content: "\f112";
+        font-size: 25px;
+        color: $heading-color;
+        font-family: Flaticon;
+    }
+
+    @media screen and (max-width: 768px) {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.active::before {
+    content: "\f112" !important;
+}
+
+.menu.active {
+    display: block !important;
+    left: 0 !important;
+    padding-bottom:1.25rem;
+    transition: all ease .5s;
+}
+
+.menu.active::before {
+    display: none;
+}
+}
+
+
+
+// .sup {
+//     position: relative;
+//     background: $icons-color;
+
+//     .menu-toggle {
+//         color: $color-primary;
+
+//         &::before {
+//             color: $color-primary;
+//         }
+//     }
+// }
+
